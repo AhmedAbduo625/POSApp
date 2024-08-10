@@ -1,0 +1,191 @@
+﻿<Window x:Class="POSAppWPF.DialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POSAppWPF"
+        xmlns:core="clr-namespace:POSAppCore;assembly=POSAppCore"
+        mc:Ignorable="d"
+        Icon="./Assets/Icons/pos-icon-64.png"
+        Title="{Binding Title}"
+        MinHeight="{Binding WindowMinimumHeight}"
+        MinWidth="{Binding WindowMinimumWidth}"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="{Binding CanResize, Converter={local:BooleanToResizeModeValueConverter}}">
+    <Window.Resources>
+
+        <Style TargetType="{x:Type local:DialogWindow}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Window}">
+
+                        <Border Padding="{Binding OuterMarginSizeThickness}">
+
+                            <Grid>
+
+                                <Border x:Name="borderMask"
+                                        CornerRadius="{Binding WindowCornerRadius}"
+                                        Background="{StaticResource PrimaryLightGraySolidClorBrush}" />
+
+                                <Border Background="{StaticResource PrimaryLightGraySolidClorBrush}"
+                                        CornerRadius="{Binding WindowCornerRadius}">
+                                    <Border.Effect>
+                                        <DropShadowEffect ShadowDepth="0"
+                                                          Opacity="0.8"
+                                                          Color="{StaticResource PrimaryLightAppColor}" />
+                                    </Border.Effect>
+                                </Border>
+
+                                <Grid>
+
+                                    <Grid.OpacityMask>
+                                        <VisualBrush Visual="{Binding ElementName=borderMask}" />
+                                    </Grid.OpacityMask>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="{Binding CaptionHeightGridLength}" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+
+                                    <!--Title bar-->
+                                    <Grid Grid.Row="0"
+                                          Panel.ZIndex="1">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <!--Application Button-->
+                                        <Button Grid.Column="0"
+                                                Style="{StaticResource CircularIconButton}"
+                                                Cursor="Arrow"
+                                                WindowChrome.IsHitTestVisibleInChrome="True"
+                                                Foreground="{StaticResource PrimaryLightSolidColorBrush}"
+                                                Background="{StaticResource PrimaryLightAppColorBrush}"
+                                                Height="39"
+                                                Width="39"
+                                                Padding="6"
+                                                Margin="4 1 0 0"
+                                                local:IconPropoperty.Value="{Binding AppLogoIcon}"
+                                                Command="{Binding MenuCommand}">
+
+                                            <Button.InputBindings>
+                                                <MouseBinding MouseAction="RightClick"
+                                                              Command="{Binding MenuCommand}" />
+                                            </Button.InputBindings>
+
+                                        </Button>
+
+                                        <!--Application Title-->
+                                        <TextBlock Grid.Column="0"
+                                                   Grid.ColumnSpan="3"
+                                                   Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=Title}"
+                                                   FontFamily="{StaticResource InterBold}"
+                                                   Foreground="{StaticResource PrimaryLightAppColorBrush}"                                                   
+                                                   Margin="0"
+                                                   VerticalAlignment="Center"
+                                                   TextAlignment="Center" />
+                                        
+                                        <!--<Viewbox Grid.Column="0"
+                                                 Grid.ColumnSpan="3">
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=Title}"
+                                                           Margin="0 2"
+                                                           TextAlignment="Center"
+                                                           FontFamily="{StaticResource InterBold}"
+                                                           Foreground="{StaticResource PrimaryLightAppColorBrush}" />
+                                                <TextBlock Text="By Extra Hesabate"
+                                                           TextAlignment="Center"
+                                                           Margin="0 -10 0 3"
+                                                           FontSize="8"
+                                                           FontFamily="{StaticResource InterRegular}"
+                                                           Foreground="{StaticResource SecondaryGraySolidColorBrush}" />
+                                            </StackPanel>
+
+                                        </Viewbox>-->
+
+                                        <!--System Buttons-->
+                                        <StackPanel Grid.Column="2"
+                                                    Orientation="Horizontal"
+                                                    VerticalAlignment="Top"
+                                                    Margin="0 4 2 0">
+
+                                            <Button Style="{StaticResource SystemButton}"
+                                                    Command="{Binding MinimizeCommand}"
+                                                    ToolTip="Minimze"
+                                                    local:IconPropoperty.Value="{Binding MinimizeIcon}" />
+
+                                            <Button Style="{StaticResource SystemButton}"
+                                                    Command="{Binding MaximizeCommand}"
+                                                    ToolTip="{Binding MaximizeButtonTooltip}"
+                                                    local:IconPropoperty.Value="{Binding MaximizeIcon}" />
+
+                                            <Button Style="{StaticResource CloseSystemButton}"
+                                                    Command="{Binding CloseCommand}"
+                                                    ToolTip="Close"
+                                                    local:IconPropoperty.Value="{Binding CloseIcon}" />
+
+                                        </StackPanel>
+
+
+                                    </Grid>
+
+                                    <!--Gradient border-->
+                                    <Border Grid.Row="1"
+                                            BorderThickness="0 2 0 0">
+
+                                        <Border.BorderBrush>
+                                            <LinearGradientBrush StartPoint="0,0"
+                                                                 EndPoint="1,0">
+
+                                                <GradientStop Color="{StaticResource SecondaryLightGrayColor}"
+                                                              Offset="0.0" />
+
+                                                <GradientStop Color="{StaticResource SecondaryLightGrayColor3}"
+                                                              Offset="0.5" />
+
+                                                <GradientStop Color="{StaticResource SecondaryLightGrayColor}"
+                                                              Offset="1.0" />
+
+                                            </LinearGradientBrush>
+                                        </Border.BorderBrush>
+
+                                    </Border>
+
+                                    <!--Window Content-->
+                                    <Border Grid.Row="1"
+                                            Padding="10">
+                                        <ContentPresenter />
+                                    </Border>
+
+                                </Grid>
+
+                            </Grid>
+
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="{Binding ResizeBorderThickness}"
+                      CaptionHeight="{Binding CaptionHeight}"
+                      CornerRadius="0"
+                      GlassFrameThickness="0" />
+    </WindowChrome.WindowChrome>
+
+    <Grid Background="{StaticResource PrimaryLightGraySolidClorBrush}">
+        <ContentControl Content="{Binding Content}" />
+    </Grid>
+    
+</Window>

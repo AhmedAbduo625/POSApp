@@ -1,0 +1,121 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Storyboard x:Key="ToPrimaryLightAppBackgroundColorBrush">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightAppColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimaryLightAppForegroundColorBrush">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightAppColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToPrimaryDarkAppBackgroundColorBrush">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryDarkAppColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimaryDarkAppForegroundColorBrush">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryDarkAppColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToPrimaryLightBackgroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimaryLightForegroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToPrimarySkyBlueBackgroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimarySkyBlueColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimarySkyBlueForegroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimarySkyBlueColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToSecondarySkyBlueBackgroundColor">
+        <ColorAnimation Duration="0:0:0.3"
+                        To="{StaticResource SecondarySkyBlueColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToSecondarySkyBlueForegroundColor">
+        <ColorAnimation Duration="0:0:0.3"
+                        To="{StaticResource SecondarySkyBlueColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToPrimaryLigthSkyBlueBackgroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightSkyBlueColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimaryLigthSkyBlueForegroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightSkyBlueColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToPrimaryOrangeBackgroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryOrangeColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimaryOrangeForegroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryOrangeColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToPrimaryRedBackgroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryRedColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToPrimaryRedForegroundColor">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryRedColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToSecondaryRedBackgroundColor">
+        <ColorAnimation Duration="0:0:0.3"
+                        To="{StaticResource SecondaryRedColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    
+
+    <Storyboard x:Key="ToSecondaryRedBackgroundColor3">
+        <ColorAnimation Duration="0:0:0.3"
+                        To="{StaticResource SecondaryRedColor3}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToSecondaryRedForegroundColor3">
+        <ColorAnimation Duration="0:0:0.3"
+                        To="{StaticResource SecondaryRedColor3}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+
+    <Storyboard x:Key="ToSecondaryLightGrayBackgroundColor3">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightSkyBlueColor}"
+                        Storyboard.TargetProperty="Background.Color" />
+    </Storyboard>
+    <Storyboard x:Key="ToSecondaryLightGrayForegroundColor3">
+        <ColorAnimation Duration="0:0:0.2"
+                        To="{StaticResource PrimaryLightSkyBlueColor}"
+                        Storyboard.TargetProperty="Foreground.Color" />
+    </Storyboard>
+    
+</ResourceDictionary>

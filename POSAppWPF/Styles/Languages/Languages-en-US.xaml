@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=netstandard">
+
+    <System:String x:Key="AppHeader">Hesabate</System:String>
+    <System:String x:Key="Login">Login</System:String>
+    <System:String x:Key="UserLogin">User Login</System:String>
+    <System:String x:Key="AppUpdate">UPDATE</System:String>
+    <System:String x:Key="AppAbout">ABOUT</System:String>
+    <System:String x:Key="AppContact">CONTACT</System:String>
+    <System:String x:Key="AppSignIn">SIGN IN</System:String>
+    <System:String x:Key="AppSignUp">SIGN UP</System:String>
+
+    <System:String x:Key="LoginDescription">Welcome in Hesabate Extra app !</System:String>
+    <System:String x:Key="UserName">Username</System:String>
+    <System:String x:Key="Password">Password</System:String>
+    <System:String x:Key="ForgotPassword">Forgot Password ?</System:String>
+    <System:String x:Key="StartupHeader">POS Application</System:String>
+    <System:String x:Key="StartupDescription">Cloud desktop application is developed mainly to manage and help shops and restaurant owners</System:String>
+
+    <System:String x:Key="ApplicationUpdates">Application Updates</System:String>
+    <System:String x:Key="CheckForUpdates">Check For Updates</System:String>
+    <System:String x:Key="UpdatesPageDesc">In this page you can check for any updates are available and install them for engoying with the new features.</System:String>
+
+    <System:String x:Key="NoMenusToShow">No menus to show</System:String>
+    <System:String x:Key="NoItemsToShow">No items to show</System:String>
+    <System:String x:Key="NoCatesToShow">No categories to show</System:String>
+    <System:String x:Key="NoBillToShow">No bill to show</System:String>
+    
+</ResourceDictionary>

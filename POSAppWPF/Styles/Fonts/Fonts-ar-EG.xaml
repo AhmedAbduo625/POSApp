@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--For arabic fonts-->
+    <FontFamily x:Key="Light">pack://application;,,,/Fonts/Cairo/#Cairo Light</FontFamily>
+    <FontFamily x:Key="Regular">pack://application;,,,/Fonts/Cairo/#Cairo Regular</FontFamily>
+    <FontFamily x:Key="Medium">pack://application;,,,/Fonts/Cairo/#Cairo Medium</FontFamily>
+    <FontFamily x:Key="Bold">pack://application;,,,/Fonts/Cairo/#Cairo Bold</FontFamily>
+    <FontFamily x:Key="ExtraBold">pack://application;,,,/Fonts/Cairo/#Cairo ExtraBold</FontFamily>
+
+    <!--<FontFamily x:Key="Medium">pack://application;,,,/Fonts/ElMessiri/#El Messiri Medium</FontFamily>
+    <FontFamily x:Key="Regular">pack://application;,,,/Fonts/ElMessiri/#El Messiri Regular</FontFamily>
+    <FontFamily x:Key="Bold">pack://application;,,,/Fonts/ElMessiri/#El Messiri Bold</FontFamily>
+    <FontFamily x:Key="SemiBold">pack://application;,,,/Fonts/ElMessiri/#El Messiri SemiBold</FontFamily>-->
+
+    <!--<FontFamily x:Key="Light">pack://application;,,,/Fonts/Inter/#Inter Light</FontFamily>
+    <FontFamily x:Key="Regular">pack://application;,,,/Fonts/Inter/#Inter Regular</FontFamily>
+    <FontFamily x:Key="Medium">pack://application;,,,/Fonts/Inter/#Inter Medium</FontFamily>
+    <FontFamily x:Key="Bold">pack://application;,,,/Fonts/Inter/#Inter Bold</FontFamily>
+    <FontFamily x:Key="ExtraBold">pack://application;,,,/Fonts/Inter/#Inter ExtraBold</FontFamily>-->
+    
+    <FontFamily x:Key="HeaderFont">pack://application;,,,/Fonts/Kufam/#Kufam Medium</FontFamily>
+    
+</ResourceDictionary>

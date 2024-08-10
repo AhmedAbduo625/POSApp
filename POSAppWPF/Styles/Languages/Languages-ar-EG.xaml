@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=netstandard">
+
+    <System:String x:Key="Login">دخول</System:String>
+    <System:String x:Key="UserLogin">تسجيل الدخول</System:String>
+    <System:String x:Key="AppUpdate">تحديث</System:String>
+    <System:String x:Key="AppAbout">من نحن</System:String>
+    <System:String x:Key="AppContact">تواصل معنا</System:String>
+    <System:String x:Key="AppSignIn">تسجيل دخول</System:String>
+    <System:String x:Key="AppSignUp">مستخدم جديد</System:String>
+
+    <System:String x:Key="LoginDescription">مرحباً بك فى تطبيق حسابات إكسترا !</System:String>
+    <System:String x:Key="UserName">اسم المستخدم</System:String>
+    <System:String x:Key="Password">كلمة المرور</System:String>
+    <System:String x:Key="ForgotPassword">نسيت كلمة المرور ؟</System:String>
+    <System:String x:Key="StartupHeader">تطبيق نقاط البيع</System:String>
+    <System:String x:Key="StartupDescription">تطبيق سطح المكتب السحابى تم تطويره خصيصاً لإدارة ومساعدة ملاك المحلات والمطاعم</System:String>
+
+    <System:String x:Key="NoMenusToShow">لا توجد قوائم للعرض</System:String>
+    <System:String x:Key="NoItemsToShow">لا توجد عناصر للعرض</System:String>
+    <System:String x:Key="NoCatesToShow">لا توجد أصناف للعرض</System:String>
+    <System:String x:Key="NoBillToShow">لا توجد فاتورة للعرض</System:String>
+    
+    <System:String x:Key="ApplicationUpdates">تحديثات التطبيق</System:String>
+    <System:String x:Key="CheckForUpdates">تفحص من وجود تحديثات</System:String>
+    <System:String x:Key="UpdatesPageDesc">من خلال هذه الصفحة يمكنك التفحص من وجود اي تحديثات متاحة وتثبيتها للإستمتاع بالمزايا الجدبدة.</System:String>
+
+
+</ResourceDictionary>

@@ -1,0 +1,42 @@
+﻿namespace POSAppCore
+{
+    public enum Icons
+    {
+        CloseIcon,
+        MaximizeIcon,
+        MinimizeIcon,
+        RadiologyIcon,
+        DateIcon,
+        ExpandAndCollapseIcon,
+        EmployeesIcon,
+        UsersIcon,
+        PatientsIcon,
+        UserNameIcon,
+        PasswordIcon,
+        GenderIcon,
+        CountryIcon,
+        CityIcon,
+        AddressIcon,
+        MobileNumberIcon,
+        ClinicIcon,
+        EmailIcon,
+        CameraIcon,
+        HomeIcon,
+        AppLogoIcon,
+		LanguageIcon,
+		CartIcon,
+		DiscountIcon,
+		TaxIcon,
+        PlusIcon,
+        MinusIcon,
+        TakeAwayIcon,
+        DeliveryIcon,
+        LobbyIcon,
+        CashIcon,
+        VisaIcon,
+        LiabilityIcon,
+        CustomersIcon,
+        BackIcon,
+		NotFoundIcon
+	}
+}

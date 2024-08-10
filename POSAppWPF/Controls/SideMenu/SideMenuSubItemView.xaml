@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="POSAppWPF.SideMenuSubItemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:POSAppWPF"
+             xmlns:core="clr-namespace:POSAppCore;assembly=POSAppCore"
+             mc:Ignorable="d"
+             d:DataContext="{x:Static core:SideMenuItemDesignModel.Instance}">
+    <Canvas>
+
+        <Border Background="{StaticResource PrimaryLightAppColorBrush}"
+                CornerRadius="0 5 5 0"
+                Padding="10"
+                Canvas.Top="0"
+                Canvas.Right="{Binding Path=ActualWidth, RelativeSource={RelativeSource Mode=Self}, Converter={local:NegativeDoubleValueConverter}}"
+                local:SideMenuSubItemHoverProperty.Value="True"
+                local:SideMenuSubItemAnimationProperty.Value="{Binding IsHover}">
+
+            <StackPanel>
+
+                <TextBlock Text="{Binding ButtonContent}"
+                           Foreground="{StaticResource PrimaryLightSolidColorBrush}"
+                           HorizontalAlignment="Center"
+                           Padding="3"
+                           FontFamily="{StaticResource Bold}"
+                           Visibility="{Binding HasSingleChildren, Converter={local:BooleanToCollapsedVisibilityValueConverter}, ConverterParameter=True}" />
+
+                <ItemsControl ItemsSource="{Binding Children}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Style="{StaticResource TextButton-fromLightToLightSky}"
+                                    Content="{Binding ButtonContent}"
+                                    Padding="3"
+                                    Command="{Binding ButtonChildClickedCommand}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+            </StackPanel>
+
+        </Border>
+
+    </Canvas>
+</UserControl>

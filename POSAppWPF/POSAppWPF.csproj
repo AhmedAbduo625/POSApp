@@ -1,0 +1,133 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Icons\email-icon-32.png" />
+    <None Remove="Assets\Icons\food-category-64.png" />
+    <None Remove="Assets\Icons\food-icon-128.png" />
+    <None Remove="Assets\Icons\food-icon-256.png" />
+    <None Remove="Assets\Icons\food-menu-64.png" />
+    <None Remove="Assets\Icons\pos-icon-24.png" />
+    <None Remove="Assets\Icons\pos-icon-64.png" />
+    <None Remove="Assets\Icons\sms-icon-32.png" />
+    <None Remove="Assets\Icons\user-icon-256.png" />
+    <None Remove="Assets\Images\Pizza-1.png" />
+    <None Remove="Assets\Images\Pizza-2.png" />
+    <None Remove="Assets\Images\Pizza-3.png" />
+    <None Remove="Assets\Images\pizza-left-bottom-slice.png" />
+    <None Remove="Assets\Images\pizza-left-slice.png" />
+    <None Remove="Assets\Images\pizza-left-top-slice.png" />
+    <None Remove="Assets\Images\pizza-right-bottom-slice.png" />
+    <None Remove="Assets\Images\pizza-right-slice.png" />
+    <None Remove="Assets\Images\pizza-right-top-slice.png" />
+    <None Remove="Assets\Images\pizza-slice-1.png" />
+    <None Remove="Assets\Images\pizza-slice-3.png" />
+    <None Remove="Assets\Images\pizza-slice2.png" />
+    <None Remove="Assets\Svgs\forgot-password-page.svg" />
+    <None Remove="Assets\Svgs\sign-page-logo.svg" />
+    <None Remove="Assets\Svgs\update-page-logo.svg" />
+    <None Remove="Fonts\Cairo\Cairo-Bold.ttf" />
+    <None Remove="Fonts\Cairo\Cairo-ExtraBold.ttf" />
+    <None Remove="Fonts\Cairo\Cairo-Light.ttf" />
+    <None Remove="Fonts\Cairo\Cairo-Medium.ttf" />
+    <None Remove="Fonts\Cairo\Cairo-Regular.ttf" />
+    <None Remove="Fonts\Chivo\Chivo-Medium.ttf" />
+    <None Remove="Fonts\ElMessiri\ElMessiri-Bold.ttf" />
+    <None Remove="Fonts\ElMessiri\ElMessiri-Medium.ttf" />
+    <None Remove="Fonts\ElMessiri\ElMessiri-Regular.ttf" />
+    <None Remove="Fonts\ElMessiri\ElMessiri-SemiBold.ttf" />
+    <None Remove="Fonts\Inter\Inter-Bold.ttf" />
+    <None Remove="Fonts\Inter\Inter-ExtraBold.ttf" />
+    <None Remove="Fonts\Inter\Inter-Light.ttf" />
+    <None Remove="Fonts\Inter\Inter-Medium.ttf" />
+    <None Remove="Fonts\Inter\Inter-Regular.ttf" />
+    <None Remove="Fonts\Kufam\Kufam-Medium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.6" />
+    <PackageReference Include="NuGet.CommandLine" Version="6.10.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SharpVectors" Version="1.8.4" />
+    <PackageReference Include="squirrel.windows" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POSAppCore\POSAppCore.csproj" />
+    <ProjectReference Include="..\POSAppModels\POSAppModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Icons\email-icon-32.png" />
+    <Resource Include="Assets\Icons\food-category-64.png" />
+    <Resource Include="Assets\Icons\food-icon-128.png" />
+    <Resource Include="Assets\Icons\food-icon-256.png" />
+    <Resource Include="Assets\Icons\food-menu-64.png" />
+    <Resource Include="Assets\Icons\pos-icon-24.png" />
+    <Resource Include="Assets\Icons\pos-icon-64.png" />
+    <Resource Include="Assets\Icons\sms-icon-32.png" />
+    <Resource Include="Assets\Icons\user-icon-256.png" />
+    <Resource Include="Assets\Images\Pizza-1.png" />
+    <Resource Include="Assets\Images\Pizza-2.png" />
+    <Resource Include="Assets\Images\Pizza-3.png" />
+    <Resource Include="Assets\Images\pizza-left-bottom-slice.png" />
+    <Resource Include="Assets\Images\pizza-left-slice.png" />
+    <Resource Include="Assets\Images\pizza-left-top-slice.png" />
+    <Resource Include="Assets\Images\pizza-right-bottom-slice.png" />
+    <Resource Include="Assets\Images\pizza-right-slice.png" />
+    <Resource Include="Assets\Images\pizza-right-top-slice.png" />
+    <Resource Include="Assets\Images\pizza-slice-1.png" />
+    <Resource Include="Assets\Images\pizza-slice-3.png" />
+    <Resource Include="Assets\Images\pizza-slice2.png" />
+    <Resource Include="Assets\Svgs\forgot-password-page.svg" />
+    <Resource Include="Assets\Svgs\sign-page-logo.svg" />
+    <Resource Include="Assets\Svgs\update-page-logo.svg" />
+    <Resource Include="Fonts\Cairo\Cairo-Bold.ttf" />
+    <Resource Include="Fonts\Cairo\Cairo-ExtraBold.ttf" />
+    <Resource Include="Fonts\Cairo\Cairo-Light.ttf" />
+    <Resource Include="Fonts\Cairo\Cairo-Medium.ttf" />
+    <Resource Include="Fonts\Cairo\Cairo-Regular.ttf" />
+    <Resource Include="Fonts\Chivo\Chivo-Medium.ttf" />
+    <Resource Include="Fonts\ElMessiri\ElMessiri-Bold.ttf" />
+    <Resource Include="Fonts\ElMessiri\ElMessiri-Medium.ttf" />
+    <Resource Include="Fonts\ElMessiri\ElMessiri-Regular.ttf" />
+    <Resource Include="Fonts\ElMessiri\ElMessiri-SemiBold.ttf" />
+    <Resource Include="Fonts\Inter\Inter-Bold.ttf" />
+    <Resource Include="Fonts\Inter\Inter-ExtraBold.ttf" />
+    <Resource Include="Fonts\Inter\Inter-Light.ttf" />
+    <Resource Include="Fonts\Inter\Inter-Medium.ttf" />
+    <Resource Include="Fonts\Inter\Inter-Regular.ttf" />
+    <Resource Include="Fonts\Kufam\Kufam-Medium.ttf" />
+  </ItemGroup>
+
+	<PropertyGroup>
+		<NugetTools>$(PkgNuGet_CommandLine)\tools</NugetTools>
+		<SquirrelTools>$(Pkgsquirrel_windows)\tools</SquirrelTools>
+
+		<Version>1.0.0</Version>
+
+		<NuspecFile>$(SolutionDir)POSAppWPF\ReleaseSpec.nuspec</NuspecFile>
+
+	</PropertyGroup>
+
+	<Target Name="GenerateRelease" AfterTargets="AfterBuild" Condition="$(Configuration) == Release">
+		<XmlPeek XmlInputPath="$(NuspecFile)" Query="/package/metadata/id/text()">
+			<Output TaskParameter="Result" ItemName="ID" />
+		</XmlPeek>
+
+		<Exec Command="&quot;$(NugetTools)\NuGet.exe&quot; pack &quot;$(NuspecFile)&quot; -Version $(Version) -Properties Configuration=Release -OutputDirectory &quot;$(SolutionDir)Deployment\GeneratedNugets&quot;" />
+
+		<Exec Command="&quot;$(SquirrelTools)\Squirrel.exe&quot; --releasify &quot;$(SolutionDir)Deployment\GeneratedNugets\@(ID).$(Version).nupkg&quot; --releaseDir=&quot;$(SolutionDir)Deployment\Releases&quot;" />
+
+	</Target>
+	
+	
+</Project>
