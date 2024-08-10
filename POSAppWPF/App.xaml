@@ -7,13 +7,13 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
 
-                <ResourceDictionary Source="Styles/Languages/Languages-en-US.xaml" />
+                <!--<ResourceDictionary Source="Styles/Languages/Languages-en-US.xaml" />
                 <ResourceDictionary Source="Styles/Fonts/Fonts-en-US.xaml" />
-                <ResourceDictionary Source="Styles/Directions/Directions-en-US.xaml" />
+                <ResourceDictionary Source="Styles/Directions/Directions-en-US.xaml" />-->
 
-                <!--<ResourceDictionary Source="Styles/Languages/Languages-ar-EG.xaml" />
+                <ResourceDictionary Source="Styles/Languages/Languages-ar-EG.xaml" />
                 <ResourceDictionary Source="Styles/Fonts/Fonts-ar-EG.xaml" />
-                <ResourceDictionary Source="Styles/Directions/Directions-ar-EG.xaml" />-->
+                <ResourceDictionary Source="Styles/Directions/Directions-ar-EG.xaml" />
 
 
                 <ResourceDictionary Source="Styles/Fonts.xaml" />
